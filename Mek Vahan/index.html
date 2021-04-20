@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Montserrat';
+            font-weight: bold;
+            background-color: rgb(248, 247, 247);
+            height: 100vh;
+            width: 100vw;
+            color: rgb(219, 10, 22);
+            overflow-x: hidden;
+        }
+        
+        @font-face {
+            font-family: 'Gotham';
+            src: url('fonts/Gotham-Bold.eot');
+            /* IE9 Compat Modes */
+            src: url('fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('fonts/Gotham-Bold.woff') format('woff'), /* Modern Browsers */
+            url('fonts/Gotham-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('fonts/Gotham-Bold.svg#svgFontName') format('svg');
+            /* Legacy iOS */
+            font-weight: 700;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Gotham';
+            src: url('fonts/Gotham-Medium.eot');
+            /* IE9 Compat Modes */
+            src: url('fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('fonts/Gotham-Medium.woff') format('woff'), /* Modern Browsers */
+            url('fonts/Gotham-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('fonts/Gotham-Medium.svg#svgFontName') format('svg');
+            /* Legacy iOS */
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Gotham';
+            src: url('fonts/Gotham-Thin.eot');
+            /* IE9 Compat Modes */
+            src: url('fonts/Gotham-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('fonts/Gotham-Thin.woff') format('woff'), /* Modern Browsers */
+            url('fonts/Gotham-Thin.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('fonts/Gotham-Thin.svg#svgFontName') format('svg');
+            /* Legacy iOS */
+            font-weight: 300;
+            font-style: normal;
+        }
+        
+        .nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+            overflow: hidden;
+            height: 45px;
+            background-color: rgb(219, 10, 22);
+        }
+        
+        .nav li {
+            float: right;
+            display: inline-block;
+        }
+        
+        @media screen and (max-width: 44em) {
+            nav[role="full-horizontal"] {
+                ul>li {
+                    width: 100%;
+                }
+            }
+        }
+        
+        .search input[type=text] {
+            float: left;
+            padding: 6px;
+            margin-top: 8px;
+            margin-right: 16px;
+            border-style: Solid;
+            border-color: #666666;
+            border-color: rgba(102, 102, 102, 1);
+            border-width: 1px;
+            font-size: 17px;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .search input[type=text] {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+            .search input[type=text] {
+                border: 1px solid #ccc;
+            }
+        }
+        
+        body>.footer {
+            background: #aaa;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        body>.logo>.details>.socials {
+            flex-grow: 1;
+            width: 33%;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo" style="background: url(./asset/SVG/Asset\ 40.svg); 
+            background-repeat: no-repeat;
+            height: 93px;
+            margin-left: 74px;
+            text-align: left;">
+                <h1 style="font-weight : bold;
+                font-size : 45px;
+                letter-spacing : -0.18px;
+                margin-left: 60px;
+                margin-top: 20px;
+                padding-top: 20px;
+                margin-left:100px;
+                ">MEKVAHAN</h1>
+            </div>
+            <div class="location" style="float: right; top:62.43px; margin-right: 60px; margin-top:-50px;">
+                <a href="" style="font-size : 18px; color: rgb(219, 10, 22); text-decoration: none; ">NOIDA
+                    <img src="./asset/SVG/Asset 43.svg" style="height: 19px;" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="nav" role="full-horizontal">
+
+            <ul style="font-family: Montserrat Medium; ">
+                <li>
+                    <button type="submit" style="border:none;
+                    width:130 px;
+                    height:29.8868px;
+                    padding: 1.2%;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    font-family: 'Montserrat';
+                    border-radius: 20px;
+                     background-color: white;
+                     margin-top:4%;
+                     margin-right: 70px; 
+                     color: rgb(219, 10, 22); 
+                     font-size:13.2183px; ">Login/SignUp</button>
+                </li>
+
+                <li>
+                    <a href="#wallet"><img src="./asset/1x/Asset 42mdpi.png" style="padding-top:2%;" alt=""></a>
+                </li>
+                <li>
+                    <a href="#wallet"><img src="./asset/1x/Asset 41mdpi.png" alt=""></a>
+                </li>
+                <li><a style=" display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 18px;
+                    text-decoration: none;" href="#contactUS">CONTACT US</a></li>
+                <li><a style=" display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 18px;
+                    text-decoration: none;" href="#career">CAREER</a></li>
+                <li><a style=" display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 18px;
+                    text-decoration: none;" href="#about">ABOUT</a></li>
+                <li><a style=" display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 18px;
+                    text-decoration: none;" href="#sos">SOS</a></li>
+                <li><a style=" display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 18px;
+                    text-decoration: none;" href="#services">SERVICES</a></li>
+                <li><a style=" display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 18px;
+                    text-decoration: none;" class="active" href="#home">HOME</a></li>
+            </ul>
+        </div>
+        <div class="container" style="margin-left: 74px;">
+            <div class="intro">
+                <h1 style="
+            font-weight : bold;
+            font-size : 30px;
+            margin-top: 60px;
+            letter-spacing : -0.12px;
+            color : #DB0A16;
+            color : rgb(219, 10, 22);">Give your vehicle an extra life</h1>
+                <p style="color: black; font-weight: normal;line-height: 40px;">
+                    We provide stupendous automobile repairing services <br>Service Starts at <span>&#8377;</span> 49 | Hurry up! <span style="font-weight : bold;
+                font-size : 18px;
+                color : #DB0A16;
+                color : rgb(219, 10, 22);margin-left: 30px;">NOIDA</span>
+                </p>
+            </div>
+            <div class="buttons" style="margin:10px 0px;">
+                <button type="submit" style="border:none;
+                 font-family : Gotham Medium;
+                 padding-left:10px;
+                font-size : 16.3823px;
+                color : #FFFFFF;
+                color : rgb(255, 255, 255);
+                height: 50.6782px;
+                background: rgb(219, 10, 22);
+                width: 169.3271px;
+                border-radius : 2px;
+                margin-right:10px;
+                text-align: center;
+                -moz-border-radius : 2px;
+                -webkit-border-radius : 2px;"><img src="./asset/1x/Asset 44mdpi.png" style="float: left;margin-left:3%;" alt="">Bike</button>
+
+                <button type="submit" style="border:none;
+                font-family : Gotham Medium;
+                font-size : 16.3823px;
+                color : #000000;   
+                padding-left:10px;       
+                height: 50.6782px;
+                background: white;
+                width: 169.3271px;
+                border-radius : 2px;
+                text-align: center;
+                border-right: 6px solid red;
+                -moz-border-radius : 2px;
+                -webkit-border-radius : 2px;"><img src="./asset/1x/Asset 45mdpi.png" style="float: left;margin-left:3%;" alt="">Car</button>
+            </div>
+            <div class="search" style="margin-bottom: 150px;">
+                <input type="text" style="font-family : Montserrat;
+                font-size : 18px;
+                padding: 15px;
+                letter-spacing : -0.99px;
+                color : #999999;
+                 padding-right: 200px;
+                 border-style : Solid;
+                 height: 60.9942 px;
+                 border-color : #666666;
+                border-color : rgba(102, 102, 102, 1);
+                border-width : 1px;" placeholder="Select Your Bike Details *">
+                <button style="background-color: red; color: white;box-shadow : 7px 7px 15px rgba(145, 35, 35, 0.5);
+                filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=7, OffY=7, Color='#912323') ; font-size : 14px;
+                letter-spacing : -0.77px;
+                color : #FFFFFF;
+                color : rgb(255, 255, 255); padding: 15px;
+                padding-left: 40px;
+                padding-right: 40px;height: 50.9971 px;
+                margin-top: 12px;
+                border: none;">Book Now</button>
+            </div>
+        </div>
+        <div class="background">
+            <img src="./asset/SVG/Asset 48.svg" style="padding-bottom: 15px; ">
+        </div>
+
+        <div class="banner" style=" font-family : Montserrat;
+            font-weight : bold;
+            letter-spacing : -1.01px;
+            color : #CCCCCC;
+            color : rgb(204, 204, 204);
+            background : #F2F2F2;
+            background : rgba(242, 242, 242, 1);">
+            <h1 style="text-align: center;font-size : 253px;">BANNER</h1>
+        </div>
+        <div class="footer" style="padding-top: 60px;">
+            <div class="logo" style="background: url(./asset/SVG/Asset\ 40.svg); 
+                background-repeat: no-repeat;
+                height: 93px;
+                width: 30%;
+                margin-left: 74px;
+                text-align: left;">
+                <h1 style="font-weight : bold;
+                font-size : 45px;
+                letter-spacing : -0.18px;
+                margin-left: 60px;
+                width: 217.9775px;
+                margin-top: 22px;
+                padding-top: 22px;
+                margin-left:100px;
+                ">MEKVAHAN</h1>
+            </div>
+            <div class="details" style="font-family : Gotham Book;
+                    font-size : 16px;
+                    line-height : 25.6px;
+                    letter-spacing : 0.64px;
+                    align-items: center;
+                    width: 50%;
+                    text-align: center;
+                    margin-top: -4%;
+                    margin-left: 30%;
+                    display:flex;
+                    flex-wrap:wrap;
+                    color : #000000;
+                    color : rgb(0, 0, 0);">
+                <p class="col" style="float: left; width: 33.6%;text-align: left;">7838878899 <br>support@mekpark.com
+                </p>
+                <p class="col" style="padding-left:30px;float: right; width: 50%;text-align: left;
+                ">G-318,PH-6-AYA Nagar Extn. <br> Delhi-110047,India
+                </p>
+            </div>
+            <div class="socials" style="float:right; width:33.6%;">
+                <p style="font-family : Gotham Book;
+                    font-size : 16px;
+                    display: inline-block;
+                    float: left;
+                    margin-left:20px;
+                    height: 17.3926px;
+                    line-height : 25.6px;
+                    letter-spacing : 0.64px;
+                    color : #000000;
+                    color : rgb(0, 0, 0);">Follow: </p>
+                <img src="./asset/SVG/Asset 50.svg" style="height:38.0499px; float: right;margin-right: 10%;" alt="">
+
+            </div>
+
+            <div class="playstore" style="align-items: center;height: 70px;margin-top: 5%; border-bottom: 1px solid #999999;">
+                <p style=" font-family : Gotham Book;
+                    font-size : 14px;
+                    line-height : 25.6px;
+                    float:left;
+                    margin-left:40%;
+                    margin-top: 30px;
+                    position: relative;
+                    color : #000000;
+                    color : rgb(0, 0, 0);">Available on: </p>
+                <img src="./asset/1x/Asset 49mdpi.png" style="display:block;height:100px;height: 50px;width: 128.3674px;
+               " alt="">
+            </div>
+            <div class="lists" style="padding-bottom: 20px;display: inline-block; width: 100%; ">
+                <p style=" float:right;
+                font-family : Gotham Book;
+                font-size : 13px;
+                margin-right: 10%;
+                line-height : 25.6px;
+                letter-spacing : 0.52px;
+                color : #666666;
+                color : rgb(102, 102, 102);">A product of Udyamat MA Viramasva Pvt. Ltd.</p>
+                <ul style=" margin-left:130px;font-family:Gotham Book;font-size:13px; line-height : 25.6px; letter-spacing : 0.52px; color : #666666; overflow: hidden; list-style-type: none;width: 50%; color : rgb(102, 102, 102); ">
+                    <li style=" float:left; padding-right: 20px; ">Privacy Policy</li>
+                    <li style=" float:left; padding-right: 20px;">Terms of use</li>
+                    <li style="float:left; padding-right: 20px; ">Legal notice</li>
+                    <li style=" float:left; padding-right: 20px;">Agreement</li>
+                </ul>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
